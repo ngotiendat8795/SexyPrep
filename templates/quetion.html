@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+ 
+
+    <input class="typing" id="Q1" name="IC13_T1_R_1" type="text" placeholder="1">
+
+    <input class="typing" id="Q2" name="IC13_T1_R_2" type="text" placeholder="2">
+    
+    <input class="typing" id="Q3" name="IC13_T1_R_3" type="text" placeholder="3">
+
+    <div id='Q39'>
+
+            <input type="radio" name="IC13_T1_R_39" value="1" /> 1 <br />
+            <input type="radio" name="IC13_T1_R_39" value="2" /> 2 <br />
+            <input type="radio" name="IC13_T1_R_39" value="3" /> 3 <br />
+
+    </div>
+
+    <div id="Q8" class="content">
+            <p> <input type="radio" name="IC13_T1_R_8" value="T" /> TRUE </p>
+            <p> <input type="radio" name="IC13_T1_R_8" value="F" /> FALSE </p>
+            <p> <input type="radio" name="IC13_T1_R_8" value="NG" /> NOT GIVEN </p>
+
+          </div>
+
+	<div id="QQ1" class="question_button">
+      <a href="#Q1">01</a>
+      </div>
+
+      <div id="QQ8" class="question_button">
+            <a href="#Q8">08</a>
+            </div>
+      
+    <div id="QQ39" class="question_button">
+      <a href="#Q39">39</a>
+      </div>
+      
+
+</body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  
+
+<script>
+
+var inputBox = document.getElementById('Q1');
+
+inputBox.onkeyup = function(){
+var val = document.getElementById('Q1').value;
+if (val =='None') {
+    $('#QQ1').css('background-color', 'white');
+} 
+else if (val =='') {
+    $('#QQ1').css('background-color', 'white');
+} 
+else {$('#QQ1').css('background-color', 'red');}
+}
+
+
+$('#Q39 input').on('change', function() {
+   if ($('input[name=IC13_T1_R_39]:checked', '#Q39').val() !== '') {$('#QQ39').css('background-color', 'red')}
+});
+
+$('#Q8 input').on('change', function() {
+   if ($('input[name=IC13_T1_R_8]:checked', '#Q8').val() !== '') {$('#QQ8').css('background-color', 'red')}
+  });
+
+</script>
+  
+
+  <style>
+        .question_button {
+         background-color: white;
+         color: #dc3545;
+         text-align: center;
+         border: #555 1px solid;
+         border-radius: 5px;
+         width: 20px;
+         height: 20px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         margin-left: 3px;
+         margin-right: 3px;
+         padding: 3px;
+       }
+       
+       </style>

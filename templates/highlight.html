@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<style>
+.red{color:red;}
+</style>
+
+<body>
+        <h3>hello world! hello world! hello world</h3>
+        <div>hello world! hello world hello world!</div><span>hello world! hello world</span>
+</body>
+
+<script>
+$(window).load(function()  {
+    $(document).on("mouseup", function (e) {
+    var selected = getSelection();
+    var range = selected.getRangeAt(0);
+    console.log(range);
+    if(selected.toString().length > 1){
+        var newNode = document.createElement("span");
+        newNode.setAttribute("class", "red");
+        range.surroundContents(newNode);       
+    }
+    selected.removeAllRanges();
+ });
+
+function getSelection() {
+    var seltxt = '';
+     if (window.getSelection) { 
+         seltxt = window.getSelection(); 
+     } else if (document.getSelection) { 
+         seltxt = document.getSelection(); 
+     } else if (document.selection) { 
+         seltxt = document.selection.createRange().text; 
+     }
+    else return;
+    return seltxt;
+}
+
+
+})
+
+
+</script>
+</html>
