@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 from flask import *
 from bson.objectid import ObjectId
+import datetime
 app = Flask(__name__)
 
 app.secret_key = '123456789nnngggggggoooooooo""""">>><<<""""'
@@ -101,7 +102,7 @@ def reading_template(id1, id2):
         if request.method == "GET":
             Test_ID = "IC"+str(id1)+"_T"+str(id2)
             Test_Content = reading_test.find_one({"Test_ID": Test_ID})
-            return render_template('Reading_Test.html', Test_Content=Test_Content, session = session)
+            return render_template('Reading_Test_{0}_{1}.html'.format(id1,id2), Test_Content=Test_Content, session = session)
         elif request.method == "POST":
             Test_ID = "IC"+str(id1)+"_T"+str(id2)
             time_accessed = reading_answer.find(
@@ -112,6 +113,7 @@ def reading_template(id1, id2):
                 "TEST_ID": Test_ID,
                 "Section": "R",
                 "Time_Acessed": time_accessed + 1,
+                "Submit_Time" : datetime.datetime.now(),
             }
             for i in range(1, 41):
 
@@ -132,7 +134,7 @@ def reading_template(id1, id2):
 def listening_test(id1, id2):
     if 'username' in session:
         if request.method == "GET":
-            return render_template('Listening_Test.html', session = session)
+            return render_template('Listening_Test_{0}_{1}.html'.format(id1,id2), session = session)
         elif request.method == "POST":
             Test_ID = "IC"+str(id1)+"_T"+str(id2)
             time_accessed = reading_answer.find(

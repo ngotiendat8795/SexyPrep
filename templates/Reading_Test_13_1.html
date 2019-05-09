@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="/static/css/Reading_Test.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
@@ -28,38 +27,6 @@
     </div>
     
     </div>
-
-
-<!-- Script for Coundown Timer -->
-  <Script> 
-
-    // 60 minutes from now
-    var time_in_minutes = 60;
-    var current_time = Date.parse(new Date());
-    var deadline = new Date(current_time + time_in_minutes*60*1000);
-    
-    
-    function time_remaining(endtime) {
-      var t = Date.parse(endtime) - Date.parse(new Date());
-      var minutes = Math.floor( (t/1000/60) );
-      var seconds = Math.floor( (t/1000) % 60 );
-      return {'total':t, 'minutes':minutes, 'seconds':seconds};
-    }
-
-    function run_clock(id,endtime){
-      var clock = document.getElementById(id);
-      function update_clock(){
-        var t = time_remaining(endtime);
-        var display = t.minutes
-        clock.innerHTML = 'TIME LEFT '+ display + ':' + t.seconds ;
-        if(t.total<=0){ clearInterval(timeinterval); window.location.replace("http://127.0.0.1:5000/ielts/cambridge/result") }
-      }
-      update_clock(); // run function once at first to avoid delay
-      var timeinterval = setInterval(update_clock,1000);
-    }
-    run_clock("clockdiv",deadline);
-        
-  </script>
 
 <div id="setting">
 <div id="highlight_area">
@@ -696,13 +663,44 @@
 
   </div>
 
-  </div>
+</div>
 
 
 
+<!-- Script for Coundown Timer -->
+<script> 
+
+  // 60 minutes from now
+  var time_in_minutes = 60;
+  var current_time = Date.parse(new Date());
+  var deadline = new Date(current_time + time_in_minutes*60*1000);
+  
+  
+  function time_remaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var minutes = Math.floor( (t/1000/60) );
+    var seconds = Math.floor( (t/1000) % 60 );
+    return {'total':t, 'minutes':minutes, 'seconds':seconds};
+  }
+
+  function run_clock(id,endtime){
+    var clock = document.getElementById(id);
+    function update_clock(){
+      var t = time_remaining(endtime);
+      var display = t.minutes
+      clock.innerHTML = 'TIME LEFT '+ display + ':' + t.seconds ;
+      if(t.total<=0){ clearInterval(timeinterval); window.location.replace("http://127.0.0.1:5000/ielts/cambridge/result") }
+    }
+    update_clock(); // run function once at first to avoid delay
+    var timeinterval = setInterval(update_clock,1000);
+  }
+  run_clock("clockdiv",deadline);
+      
+</script>
+
+<!-- // function is used for dragging and moving P1 -->
 <script>
 
-    // function is used for dragging and moving
     function dragElement( element, direction)
     {
       var   md; // remember mouse down info
@@ -750,18 +748,18 @@
     
   </script>
 
+<!-- // function is used for dragging and moving P2 -->
 <script>
 
-    // function is used for dragging and moving
     function dragElement( element, direction)
     {
       var   md; // remember mouse down info
       const first  = document.getElementById("para_area_2");
       const second = document.getElementById("answer_area_2");
       
-      element.onmousedown = onMouseDown;
+      element.onmousedown = onMouseDown1;
       
-      function onMouseDown( e )
+      function onMouseDown1( e )
       {
     //console.log("mouse down: " + e.clientX);
     md = {e,
@@ -798,11 +796,11 @@
     
     dragElement( document.getElementById("separator_2"), "H" );
     
-  </script>
+</script>
 
+<!-- // function is used for dragging and moving P3 -->
 <script>
 
-    // function is used for dragging and moving
     function dragElement( element, direction)
     {
       var   md; // remember mouse down info
@@ -848,10 +846,9 @@
     
     dragElement( document.getElementById("separator_3"), "H" );
     
-  </script>
+</script>
 
 <!-- Script for collapsible -->
-
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -869,7 +866,6 @@
     }
 </script>
  
-
 <!-- //Script for passage fractions -->
 <script>
 
@@ -891,18 +887,8 @@ function openPassage(Passage_ID,elmnt) {
 document.getElementById("defaultOpen").click();
 </script>
 
-<!-- Script for change color of question Panel -->
-<script>
-  function colorchange(question_id) {
-   var answer = document.getElementById(question_id).value;
-   if (question != "none") { document.getElementById(question_id).style.backgroundColor ="white" }
-   else if (question != "none")
-  }
-</script>
-
 <!-- Script for text highlight -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
+<script>
 
 
 
@@ -1028,10 +1014,9 @@ document.getElementById("defaultOpen").click();
           }
       }
 
-  </script>
+</script>
 
 <!-- Script for question completed typing-->
-
 <script>
 
     var inputBox = document.getElementById('Q1');
@@ -1307,15 +1292,10 @@ document.getElementById("defaultOpen").click();
     else {$('#QQ37').css('background-color', 'red');}
     }
 
-</script>
 
-<!-- Script for question completed radio-->
 
-<script>
+//Script for question completed radio-->
 
-   
-    
-    
   $('#Q8 input').on('change', function() {
    if ($('input[name=IC13_T1_R_8]:checked', '#Q8').val() !== '') {$('#QQ8').css('background-color', 'red')}
   });
@@ -1342,10 +1322,9 @@ document.getElementById("defaultOpen").click();
 
     
     
-    </script>
+</script>
 
 <!-- Script for change text size -->
-
 <Script>
 
 $('#smallsize').click(function() {
