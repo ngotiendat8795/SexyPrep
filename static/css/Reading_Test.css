@@ -62,7 +62,10 @@ body {
   align-items: center;
 }
 
-
+.setting {
+  display: flex;
+  flex-direction: row;
+}
 
 .Passage_Content {
   display: flex;
