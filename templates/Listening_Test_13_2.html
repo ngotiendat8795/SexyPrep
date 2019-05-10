@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listening Test 1 IC13</title>
+    <link rel="stylesheet" href="/static/css/listening_test.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="interface">
+        <div id="header">
+            <div>   User: {{session.username}} </div>
+            <div id="clock_area">
+                <div><i class="fas fa-clock"></i></div>
+                <div><p id="clockdiv"></p></div>
+            </div>
+        </div>
+        <form id="listening_form" method="POST">
+        <div class="section_content" id="section1">
+            <div id="test_intro">
+                <div id="para_header"><h3>Section 1</h3></div>
+            </div>
+            <div class="test_area">
+                
+                <div class="answer_area">
+                    <h3>Question 1-10</h3>
+                    <p><i>Complete the notes below.</i></p>
+                    <p><i>Write <strong>ONE WORD AND/OR A NUMBER </strong>for each answer.</i></p>
+                    <audio src="/static/audio/IELTS13-Tests1-4CD1Track_01.mp3" controls></audio>
+                    
+                        <table>
+                            <tr>
+                                <th>South City Cycling Club</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol><i>Example</i></ol>
+                                    <ol>Name of club secretary: Jim <input class="input_table" placeholder="Hunter" tuype="text" name=""  disabled></ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul><strong>Membership</strong></ul>
+                                    <ul>
+                                        <li>Full membership costs $260; this covers cycling and <input id="Q1" class="input_table" placeholder="1" tuype="text" name="IC13_T2_L_1" > all over Australia</li>
+                                        <li>Recreational membership costs $108</li>
+                                        <li>Cost of membership includes the club fee and <input id="Q2" class="input_table" placeholder="2" tuype="text" name="IC13_T2_L_2" ></li>
+                                        <li>The club kit is made by a company called <input id="Q3" class="input_table" placeholder="3" tuype="text" name="IC13_T2_L_3" ></li>
+                                    </ul>
+                                    <ul><strong>Training rides</strong></ul>
+                                    <ul>
+                                        <li>Chance to improve cycling skills and fitness</li>
+                                        <li>Level B: speed about <input id="Q4" class="input_table" placeholder="4" tuype="text" name="IC13_T2_L_4" > kph</li>
+                                        <li>
+                                            <dt>Weekly sessions</dt>
+                                            <dd>- Tuesdays at 5:30 am, meet at the <input id="Q5" class="input_table" placeholder="5" tuype="text" name="IC13_T2_L_5" ></dd>
+                                            <dd>- Thursdays at 5:30 am, meet at the entrance to the <input id="Q6" class="input_table" placeholder="6" tuype="text" name="IC13_T2_L_6" ></dd>
+                                        </li>
+                                    </ul>
+                                    <ul><strong>Further information</strong></ul>
+                                    <ul>
+                                        <li>Rides are about an hour and a half</li>
+                                        <li>Members often have <input id="Q7" class="input_table" placeholder="7" tuype="text" name="IC13_T2_L_7" ></li>
+                                        <li>There is not always a <input id="Q8" class="input_table" placeholder="8" tuype="text" name="IC13_T2_L_8" > with the group on these rides</li>
+                                        <li>Check and print the <input id="Q9" class="input_table" placeholder="9" tuype="text" name="IC13_T2_L_9" > on the website beforehand</li>
+                                        <li>Bikes must have <input id="Q10" class="input_table" placeholder="10" tuype="text" name="IC13_T2_L_10" ></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                </div>
+            </div>
+            <div class="passage-question-nav" >
+
+                <div class="panel20"> 
+              
+                <div id="QQ1" class="question_button">
+                <a href="#Q1">01</a>
+                </div>
+              
+                <div id="QQ2" class="question_button">
+                  <a href="#Q2">02</a>
+                </div>
+              
+                <div id="QQ3" class="question_button">
+                  <a href="#Q3">03</a>
+                </div>
+              
+                <div id="QQ4" class="question_button">
+                  <a href="#Q4">04</a>
+                </div>
+              
+                <div id="QQ5" class="question_button">
+                    <a href="#Q5">05</a>
+                  </div>
+                
+                <div id="QQ6" class="question_button">
+                    <a href="#Q6">06</a>
+                  </div>
+              
+                <div id="QQ7" class="question_button">
+                    <a href="#Q7">07</a>
+                  </div>
+              
+                <div id="QQ8" class="question_button">
+                    <a href="#Q8">08</a>
+                  </div>
+              
+              
+                <div id="QQ9" class="question_button">
+                    <a href="#Q9">09</a>
+                    </div>
+                    
+                <div id="QQ10" class="question_button">
+                  <a href="#Q10">10</a>
+                </div>
+              
+                
+                </div>
+                
+              </div>
+
+
+        </div>
+        <div class="section_content" id="section2">
+            <div id="test_intro">
+                <div id="para_header"><h3>Section 2</h3></div>
+            </div>
+            <div class="test_area">
+                <div class="answer_area">
+                    <h3>Question 11-20</h3>
+                    <p><i>Choose the correct letter, <strong>A</strong>, <strong>B </strong>or <strong>C</strong>.</i></p>
+                    <audio src="/static/audio/IELTS13-Tests1-4CD1Track_02.mp3" controls></audio>
+                    <form action="" method="post">
+                        <h3 class="h3_section">Information on company volunteering projects</h3>
+                        <button type="button" class="collapsible"><strong>11. </strong> How much time for volunteering does the company allow per employee?</button>
+                        <div id="Q11" class="content">
+                            <p><input type="radio" name="IC13_T2_L_11" value="A"><strong> A. </strong>two hours per week</p>
+                            <p><input type="radio" name="IC13_T2_L_11" value="B"><strong> B. </strong>one day per month</p>
+                            <p><input type="radio" name="IC13_T2_L_11" value="C"><strong> C. </strong>8 hours per year</p>
+                        </div>
+
+                        <button type="button" class="collapsible"><strong>12. </strong> In feedback almost all employees said that volunteering improved their</button>
+                        <div id="Q12" class="content">
+                            <p><input type="radio" name="IC13_T2_L_12" value="A"><strong> A. </strong>chances of promotion.</p>
+                            <p><input type="radio" name="IC13_T2_L_12" value="B"><strong> B. </strong>job satisfaction.</p>
+                            <p><input type="radio" name="IC13_T2_L_12" value="C"><strong> C. </strong>relationships with colleagues.</p>
+                        </div>
+
+                        <button id="Q13" type="button" class="collapsible"><strong>13. </strong> Last year some staff helped unemployed people with their</button>
+                        <div class="content">
+                            <p><input type="radio" name="IC13_T2_L_13" value="A"><strong> A. </strong>literacy skills.</p>
+                            <p><input type="radio" name="IC13_T2_L_13" value="B"><strong> B. </strong>job applications.</p>
+                            <p><input type="radio" name="IC13_T2_L_13" value="C"><strong> C. </strong>communication skills.</p>
+                        </div>
+
+                        <button id="Q14" type="button" class="collapsible"><strong>14. </strong> This year the company will start a new volunteering project with a local</button>
+                        <div class="content">
+                            <p><input type="radio" name="IC13_T2_L_14" value="A"><strong> A. </strong>school.</p>
+                            <p><input type="radio" name="IC13_T2_L_14" value="B"><strong> B. </strong>park.</p>
+                            <p><input type="radio" name="IC13_T2_L_14" value="C"><strong> C. </strong>charity.</p>
+                        </div>
+
+                        <button id="Q15" type="button" class="collapsible"><strong>15. </strong> Where will the Digital Inclusion Day be held</button>
+                        <div class="content">
+                            <p><input type="radio" name="IC13_T2_L_15" value="A"><strong> A. </strong>at the company's training facility</p>
+                            <p><input type="radio" name="IC13_T2_L_15" value="B"><strong> B. </strong>at a college</p>
+                            <p><input type="radio" name="IC13_T2_L_15" value="C"><strong> C. </strong>in a community centre</p>
+                        </div>
+
+                        <button id="Q16" type="button" class="collapsible"><strong>16. </strong> What should staff do if they want to take part in the Digital Inclusion Day?</button>
+                        <div class="content">
+                            <p><input type="radio" name="IC13_T2_L_16" value="A"><strong> A. </strong>fill in a form</p>
+                            <p><input type="radio" name="IC13_T2_L_16" value="B"><strong> B. </strong>attend a training workshop</p>
+                            <p><input type="radio" name="IC13_T2_L_16" value="C"><strong> C. </strong>get permission from their manager</p>
+                        </div>
+
+                        <h3>Questions 17 and 18</h3>
+                        <p>What <b>TWO</b> things are mentioned about the participants on the last Digital Inclusion Day? </p>
+                        <p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>
+
+                        <button type="button" class="collapsible">17. </button>
+                        <div id="Q17" class="content">
+                            <p><input type="radio" name="IC13_T2_L_17" value="A"><strong> A. </strong>They were all over 70.</p>
+                            <p><input type="radio" name="IC13_T2_L_17" value="B"><strong> B. </strong>They never used their computer.</p>
+                            <p><input type="radio" name="IC13_T2_L_17" value="C"><strong> C. </strong>Their phones were mostly old-fashioned.</p>
+                            <p><input type="radio" name="IC13_T2_L_17" value="D"><strong> D. </strong>They only used their phones for making calls.</p>
+                            <p><input type="radio" name="IC13_T2_L_17" value="E"><strong> E. </strong>They initially showed little interest.</p>
+                        </div>
+
+                        <button type="button" class="collapsible">18. </button>
+                        <div id="Q18" class="content">
+                            <p><input type="radio" name="IC13_T2_L_18" value="A"><strong> A. </strong>They were all over 70.</p>
+                            <p><input type="radio" name="IC13_T2_L_18" value="B"><strong> B. </strong>They never used their computer.</p>
+                            <p><input type="radio" name="IC13_T2_L_18" value="C"><strong> C. </strong>Their phones were mostly old-fashioned.</p>
+                            <p><input type="radio" name="IC13_T2_L_18" value="D"><strong> D. </strong>They only used their phones for making calls.</p>
+                            <p><input type="radio" name="IC13_T2_L_18" value="E"><strong> E. </strong>They initially showed little interest.</p>
+                        </div>
+
+                        <h3>Questions 19 and 20</h3>
+                        <p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>
+                        <p> What TWO activities on the last Digital Inclusion Day did participants describle as useful? </p> 
+
+                        <button type="button" class="collapsible"> 19.</button>
+                        <div id="Q19" class="content">
+                            <p><input type="radio" name="IC13_T2_L_19" value="A"><strong> A. </strong>learning to use tablets</p>
+                            <p><input type="radio" name="IC13_T2_L_19" value="B"><strong> B. </strong>communicating with family</p>
+                            <p><input type="radio" name="IC13_T2_L_19" value="C"><strong> C. </strong>shopping online</p>
+                            <p><input type="radio" name="IC13_T2_L_19" value="D"><strong> D. </strong>playing online games</p>
+                            <p><input type="radio" name="IC13_T2_L_19" value="E"><strong> E. </strong>sending emails</p>
+                        </div>
+
+                        <button type="button" class="collapsible"> 20.</button>
+                        <div id="Q20" class="content">
+                            <p><input type="radio" name="IC13_T2_L_20" value="A"><strong> A. </strong>learning to use tablets</p>
+                            <p><input type="radio" name="IC13_T2_L_20" value="B"><strong> B. </strong>communicating with family</p>
+                            <p><input type="radio" name="IC13_T2_L_20" value="C"><strong> C. </strong>shopping online</p>
+                            <p><input type="radio" name="IC13_T2_L_20" value="D"><strong> D. </strong>playing online games</p>
+                            <p><input type="radio" name="IC13_T2_L_20" value="E"><strong> E. </strong>sending emails</p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="passage-question-nav" >
+
+                <div class="panel20"> 
+              
+                <div id="QQ11" class="question_button">
+                  <a href="#Q11">11</a>
+                </div>
+              
+                <div id="QQ12" class="question_button">
+                  <a href="#Q12">12</a>
+                </div>
+              
+                <div id="QQ13" class="question_button">
+                    <a href="#Q13">13</a>
+                </div>
+
+                <div id="QQ14" class="question_button">
+                    <a href="#Q14">14</a>
+                </div>
+                  
+                <div id="QQ15" class="question_button">
+                    <a href="#Q15">15</a>
+                </div>
+                
+                <div id="QQ16" class="question_button">
+                    <a href="#Q16">16</a>
+                </div>
+                
+                <div id="QQ17" class="question_button">
+                    <a href="#Q17">17</a>
+                </div>
+                
+                <div id="QQ18" class="question_button">
+                    <a href="#18">18</a>
+                </div>
+                
+                <div id="QQ19" class="question_button">
+                    <a href="#Q19">19</a>
+                </div>
+                
+                <div id="QQ20" class="question_button">
+                    <a href="#Q20">20</a>
+                </div>
+                
+                </div>
+                
+              </div>
+
+        </div>
+        <div class="section_content" id="section3">
+            <div id="test_intro">
+                <div id="para_header"><h3>Section 3</h3></div>
+            </div>
+            <div class="test_area">
+                <div class="answer_area">
+                    <h3>Questions 21-25</h3>
+                    <p><i>Choose the correct letter, <strong>A</strong>, <strong>B </strong>or <strong>C</strong>.</i></p>
+                    <audio src="/static/audio/IELTS13-Tests1-4CD1Track_03.mp3" controls></audio>
+                    <h3 class="h3_section">Planning a presentation on nanotechnology</h3>
+                    <form action="" method="POST">
+                        <button type="button" class="collapsible"><strong>21. </strong> Russ says that his difficulty in planning the presentation is due to</button>
+                        <div id="Q21" class="content">
+                            <p><input type="radio" name="IC13_T2_L_21" value="A"><strong> A. </strong>his lack of knowledge about the topic.</p>
+                            <p><input type="radio" name="IC13_T2_L_21" value="B"><strong> B. </strong>his uncertainty about what he should try to achieve.</p>
+                            <p><input type="radio" name="IC13_T2_L_21" value="C"><strong> C. </strong>the short time that he has for preparation.</p>
+                        </div>
+
+                        <button type="button" class="collapsible"><strong>22. </strong> Russ and his tutor agree that his approach in the presentation will be</button>
+                        <div id="Q22" class="content">
+                            <p><input type="radio" name="IC13_T2_L_22" value="A"><strong> A. </strong>to concentrate on how nanotechnology is used in one field.</p>
+                            <p><input type="radio" name="IC13_T2_L_22" value="B"><strong> B. </strong>to follow the chronological development of nanotechnology.</p>
+                            <p><input type="radio" name="IC13_T2_L_22" value="C"><strong> C. </strong>to show the range of applications of nanotechnology.</p>
+                        </div>
+
+                        <button type="button" class="collapsible"><strong>23. </strong> In connection with slides, the tutor advises Russ to</button>
+                        <div id="Q23" class="content">
+                            <p><input type="radio" name="IC13_T2_L_23" value="A"><strong> A. </strong>talk about things that he can find slides to illustrate.</p>
+                            <p><input type="radio" name="IC13_T2_L_23" value="B"><strong> B. </strong>look for slides to illustrate the points he makes.</p>
+                            <p><input type="radio" name="IC13_T2_L_23" value="C"><strong> C. </strong>consider omitting slides altogether.</p>
+                        </div>
+
+                        <button type="button" class="collapsible"><strong>24. </strong> They both agree that the best way for Russ to start his presentation is</button>
+                        <div id="Q24" class="content">
+                            <p><input type="radio" name="IC13_T2_L_24" value="A"><strong> A. </strong>to encourage the audience to talk.</p>
+                            <p><input type="radio" name="IC13_T2_L_24" value="B"><strong> B. </strong>to explain what Russ intends to do.</p>
+                            <p><input type="radio" name="IC13_T2_L_24" value="C"><strong> C. </strong>to provide an example.</p>
+                        </div>
+
+                        <button type="button" class="collapsible"><strong>25. </strong> What does the tutor advises Russ to do next while prepareing his presentation?</button>
+                        <div id="Q25" class="content">
+                            <p><input type="radio" name="IC13_T2_L_25" value="A"><strong> A. </strong>summarise the main point he wants to make</p>
+                            <p><input type="radio" name="IC13_T2_L_25" value="B"><strong> B. </strong>read the notes he has already made</p>
+                            <p><input type="radio" name="IC13_T2_L_25" value="C"><strong> C. </strong>list the topics he wants to cover</p>
+                        </div>
+
+                        <h3>Questions 26-30</h3>
+                        <p><i>What comments do the speakers make about each of the following aspects of Russ's previous presentation?</i></p>
+                        <p><i>choose <strong>FIVE </strong>answers from the box and write the correct letter, <strong>A-G</strong>, next to Questions 26-30.</i></p>
+                        
+                        <div class="a">
+                            <div class="table_section3">
+                                <p style="text-align:center"><strong>Comments</strong></p>
+                                <p><strong>A </strong>lacked a conclusion</p>
+                                <p><strong>B </strong>useful in the future</p>
+                                <p><strong>C </strong>not enough</p>
+                                <p><strong>D </strong>sometimes distracting</p>
+                                <p><strong>E </strong>showed originality</p>
+                                <p><strong>F </strong>covered a wide range</p>
+                                <p><strong>G </strong>not too technical</p>
+                            </div>
+                        </div>
+                        <h4>Aspects of Russ's previous presentation</h4>
+                        <div>
+                            <p><strong>26 </strong> structure <input id="Q26" class="input_table" placeholder="26" tuype="text" name="IC13_T2_L_26" ></p>
+                            <p><strong>27 </strong> eye contact <input id="Q27" class="input_table" placeholder="27" tuype="text" name="IC13_T2_L_27" ></p>
+                            <p><strong>28 </strong> body language <input id="Q28" class="input_table" placeholder="28" tuype="text" name="IC13_T2_L_28" ></p>
+                            <p><strong>29 </strong> choice of words <input id="Q29" class="input_table" placeholder="29" tuype="text" name="IC13_T2_L_29" ></p>
+                            <p><strong>30 </strong> handouts <input id="Q30" class="input_table" placeholder="30" tuype="text" name="IC13_T2_L_30" ></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="passage-question-nav" >
+
+                    <div class="panel20"> 
+                  
+                        <div id="QQ21" class="question_button">
+                            <a href="#Q21">21</a>
+                        </div>
+                            
+                            
+                        <div id="QQ22" class="question_button">
+                            <a href="#Q22">22</a>
+                        </div>
+                            
+                        <div id="QQ23" class="question_button">
+                            <a href="#Q23">23</a>
+                        </div>
+                        
+                        <div id="QQ24" class="question_button">
+                            <a href="#Q24">24</a>
+                        </div>
+                        
+                        <div id="QQ25" class="question_button">
+                            <a href="#Q25">25</a>
+                        </div>
+                        
+                        <div id="QQ26" class="question_button">
+                            <a href="#Q26">26</a>
+                        </div>
+
+                        <div class="question_button">
+                            <a href="#Q27">27</a>
+                        </div>
+                              
+                        <div class="question_button">
+                            <a href="#Q28">28</a>
+                        </div>
+                        
+                        <div class="question_button">
+                            <a href="#Q29">29</a>
+                        </div>
+                        
+                        <div class="question_button">
+                            <a href="#Q30">30</a>
+                        </div>
+                
+                    
+                    
+                    </div>
+                    
+                  </div>
+
+
+        </div>
+        <div class="section_content" id="section4">
+            <div id="test_intro">
+                <div id="para_header"><h3>Section 4</h3></div>
+            </div>
+            <div class="test_area">
+                <div class="answer_area">
+                    <h3>Questions 31-40</h3>
+                    <p><i>Complete the notes below.</i></p>
+                    <p><i>Write </i><strong>ONE WORD ONLY </strong>for each answer.</p>
+                    <audio src="/static/audio/IELTS13-Tests1-4CD1Track_04.mp3" controls></audio>
+                    <form action="" method="POST">
+                        <div class="table_section4">
+                            <ul><strong>Episodic memory</strong></ul>
+                            <ul>
+                                <li>the ability to recall details, e.g, the time and <input id="Q31" class="input_table" placeholder="31" tuype="text" name="IC13_T2_L_31" > of past events</li>
+                                <li>different to semantic memory - the ability to remember general information about the <input id="Q32" class="input_table" placeholder="32" tuype="text" name="IC13_T2_L_32" >, which does not involve recalling <input id="Q33" class="input_table" placeholder="33" tuype="text" name="IC13_T2_L_33" > information</li>
+                            </ul>
+                            <ul><strong>Forming Episodic memories involves three steps:</strong></ul>
+                            <ul><strong>Encoding</strong></ul>
+                            <ul>
+                                <li>involves receiving and processing information</li>
+                                <li>the more <input id="Q34" class="input_table" placeholder="34" tuype="text" name="IC13_T2_L_34" > given to an event, the more successfully it can be encoded</li>
+                                <li>to remember a <input id="Q35" class="input_table" placeholder="35" tuype="text" name="IC13_T2_L_35" >, it is useful to have a strategy for encoding such information</li>
+                            </ul>
+                            <ul><strong>Consolidation</strong></ul>
+                            <ul>
+                                <li>how memories are strengthened and stored</li>
+                                <li>most effective when memories can be added to a <input id="Q36" class="input_table" placeholder="36" tuype="text" name="IC13_T2_L_36" > of related information</li>
+                                <li>the <input id="Q37" class="input_table" placeholder="37" tuype="text" name="IC13_T2_L_37" > of retrieval affects the strength of memories</li>
+                            </ul>
+                            <ul><strong>retrieval</strong></ul>
+                            <ul>
+                                <li>memory retrieval often depends on using a prompt, e.g, the <input id="Q38" class="input_table" placeholder="38" tuype="text" name="IC13_T2_L_38" > of an object near to the place where you left your car</li>
+                            </ul>
+                            <ul><strong>Episodic memory impairments</strong></ul>
+                            <ul>
+                                <li>these affect people with a wide range of medical conditions</li>
+                                <li>games which stimulate the <input id="Q39" class="input_table" placeholder="39" tuype="text" name="IC13_T2_L_39" > have been found to help people with schizophrenia</li>
+                                <li>children with autism may have difficulty forming episodic memories - possibly because their concept of the <input id="Q40" class="input_table" placeholder="40" tuype="text" name="40" > may be absent</li>
+                                <li>memory training may help autistic children develop social skills</li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="passage-question-nav" >
+
+                <div class="panel20"> 
+                
+                  
+                    <div class="question_button">
+                        <a href="#Q31">31</a>
+                      </div>
+                    
+                    <div class="question_button">
+                        <a href="#Q32">32</a>
+                      </div>
+                  
+                    <div class="question_button">
+                        <a href="#Q33">33</a>
+                      </div>
+                  
+                    <div class="question_button">
+                        <a href="#Q34">34</a>
+                      </div>
+                  
+                  
+                    <div class="question_button">
+                        <a href="#Q35">35</a>
+                        </div>
+                        
+                    <div class="question_button">
+                      <a href="#Q36">36</a>
+                    </div>
+                  
+                    <div class="question_button">
+                      <a href="#Q37">37</a>
+                    </div>
+                  
+                    <div class="question_button">
+                      <a href="#Q38">38</a>
+                    </div>
+                  
+                    <div class="question_button">
+                        <a href="#Q39">39</a>
+                      </div>
+        
+                    <div class="question_button">
+                        <a href="#Q40">40</a>
+                      </div>
+                    
+                </div>
+                    
+            </div>
+        </div>
+      </form>
+        <div id="navigate_tab">
+            <div id="section_tab">
+                <button class="tablink" onclick="openSection('section1', this)" id="defaultOpen">SECTION 1</button>
+                <button class="tablink" onclick="openSection('section2', this)">SECTION 2</button>
+                <button class="tablink" onclick="openSection('section3', this)">SECTION 3</button>
+                <button class="tablink" onclick="openSection('section4', this)">SECTION 4</button>
+            </div>
+            <div id="end_tab">
+                <button id="end_button" onclick="submitFunction()">END SECTION</button>
+                <script>
+                function submitFunction() {
+                    if (confirm("Do you want to end the test?")) {document.getElementById('listening_form').submit() }
+                }
+                </script>
+            </div>
+        </div>
+    </div>
+
+<div id="codejs">
+<script>
+    //Script for passage fractions
+    function openSection(SectionID,elmnt) {
+        var i, section_content;
+        section_content = document.getElementsByClassName("section_content");
+        for (i = 0; i < section_content.length; i++) {
+            section_content[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(SectionID).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+<!-- Script for collapsible -->
+<script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+</script>
+<!-- Script for Coundown Timer -->
+<script> 
+
+        // 60 minutes from now
+        var time_in_minutes = 60;
+        var current_time = Date.parse(new Date());
+        var deadline = new Date(current_time + time_in_minutes*60*1000);
+        
+        
+        function time_remaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var minutes = Math.floor( (t/1000/60) );
+            var seconds = Math.floor( (t/1000) % 60 );
+            return {'total':t, 'minutes':minutes, 'seconds':seconds};
+        }
+
+        function run_clock(id,endtime){
+            var clock = document.getElementById(id);
+            function update_clock(){
+            var t = time_remaining(endtime);
+            var display = t.minutes
+            clock.innerHTML = 'TIME LEFT '+ display + ':' + t.seconds ;
+            if(t.total<=0){ clearInterval(timeinterval); window.location.replace("http://127.0.0.1:5000/ielts/cambridge/result") }
+            }
+            update_clock(); // run function once at first to avoid delay
+            var timeinterval = setInterval(update_clock,1000);
+        }
+        run_clock("clockdiv",deadline);
+        
+</script>
+
+<!-- Script for question completed typing-->
+<script>
+
+        var inputBox = document.getElementById('Q1');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q1').value;
+        if (val =='None') {
+            $('#QQ1').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ1').css('background-color', 'white');
+        } 
+        else {$('#QQ1').css('background-color', 'red');}
+        }
+    
+        var inputBox = document.getElementById('Q2');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q2').value;
+        if (val =='None') {
+            $('#QQ2').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ2').css('background-color', 'white');
+        } 
+        else {$('#QQ2').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q3');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q3').value;
+        if (val =='None') {
+            $('#QQ3').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ3').css('background-color', 'white');
+        } 
+        else {$('#QQ3').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q4');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q4').value;
+        if (val =='None') {
+            $('#QQ4').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ4').css('background-color', 'white');
+        } 
+        else {$('#QQ4').css('background-color', 'red');}
+        }
+    
+        var inputBox = document.getElementById('Q5');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q5').value;
+        if (val =='None') {
+            $('#QQ5').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ5').css('background-color', 'white');
+        } 
+        else {$('#QQ5').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q6');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q6').value;
+        if (val =='None') {
+            $('#QQ6').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ6').css('background-color', 'white');
+        } 
+        else {$('#QQ6').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q7');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q7').value;
+        if (val =='None') {
+            $('#QQ7').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ7').css('background-color', 'white');
+        } 
+        else {$('#QQ7').css('background-color', 'red');}
+        }
+
+        var inputBox = document.getElementById('Q8');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q8').value;
+        if (val =='None') {
+            $('#QQ8').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ8').css('background-color', 'white');
+        } 
+        else {$('#QQ8').css('background-color', 'red');}
+        }
+
+
+        var inputBox = document.getElementById('Q9');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q9').value;
+        if (val =='None') {
+            $('#QQ9').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ9').css('background-color', 'white');
+        } 
+        else {$('#QQ9').css('background-color', 'red');}
+        }
+
+
+        var inputBox = document.getElementById('Q10');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q10').value;
+        if (val =='None') {
+            $('#QQ10').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ10').css('background-color', 'white');
+        } 
+        else {$('#QQ10').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q20');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q20').value;
+        if (val =='None') {
+            $('#QQ20').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ20').css('background-color', 'white');
+        } 
+        else {$('#QQ20').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q21');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q21').value;
+        if (val =='None') {
+            $('#QQ21').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ21').css('background-color', 'white');
+        } 
+        else {$('#QQ21').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q22');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q22').value;
+        if (val =='None') {
+            $('#QQ22').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ22').css('background-color', 'white');
+        } 
+        else {$('#QQ22').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q23');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q23').value;
+        if (val =='None') {
+            $('#QQ23').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ23').css('background-color', 'white');
+        } 
+        else {$('#QQ23').css('background-color', 'red');}
+        }
+    
+        var inputBox = document.getElementById('Q24');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q24').value;
+        if (val =='None') {
+            $('#QQ24').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ24').css('background-color', 'white');
+        } 
+        else {$('#QQ24').css('background-color', 'red');}
+        }
+    
+        var inputBox = document.getElementById('Q25');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q25').value;
+        if (val =='None') {
+            $('#QQ25').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ25').css('background-color', 'white');
+        } 
+        else {$('#QQ25').css('background-color', 'red');}
+        }
+    
+        var inputBox = document.getElementById('Q26');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q26').value;
+        if (val =='None') {
+            $('#QQ26').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ26').css('background-color', 'white');
+        } 
+        else {$('#QQ26').css('background-color', 'red');}
+        }
+    
+        var inputBox = document.getElementById('Q32');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q32').value;
+        if (val =='None') {
+            $('#QQ32').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ32').css('background-color', 'white');
+        } 
+        else {$('#QQ32').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q33');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q33').value;
+        if (val =='None') {
+            $('#QQ33').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ33').css('background-color', 'white');
+        } 
+        else {$('#QQ33').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q34');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q34').value;
+        if (val =='None') {
+            $('#QQ34').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ34').css('background-color', 'white');
+        } 
+        else {$('#QQ34').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q35');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q35').value;
+        if (val =='None') {
+            $('#QQ35').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ35').css('background-color', 'white');
+        } 
+        else {$('#QQ35').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q36');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q36').value;
+        if (val =='None') {
+            $('#QQ36').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ36').css('background-color', 'white');
+        } 
+        else {$('#QQ36').css('background-color', 'red');}
+        }
+    
+    
+        var inputBox = document.getElementById('Q37');
+        
+        inputBox.onkeyup = function(){
+        var val = document.getElementById('Q37').value;
+        if (val =='None') {
+            $('#QQ37').css('background-color', 'white');
+        } 
+        else if (val =='') {
+            $('#QQ37').css('background-color', 'white');
+        } 
+        else {$('#QQ37').css('background-color', 'red');}
+        }
+    
+    
+    
+    //Script for question completed radio-->
+    
+      $('#Q8 input').on('change', function() {
+       if ($('input[name=IC13_T2_R_8]:checked', '#Q8').val() !== '') {$('#QQ8').css('background-color', 'red')}
+      });
+    
+      $('#Q9 input').on('change', function() {
+       if ($('input[name=IC13_T2_R_9]:checked', '#Q9').val() !== '') {$('#QQ9').css('background-color', 'red')}
+      });
+    
+      $('#Q10 input').on('change', function() {
+       if ($('input[name=IC13_T2_R_10]:checked', '#Q10').val() !== '') {$('#QQ10').css('background-color', 'red')}
+      });
+    
+      $('#Q11 input').on('change', function() {
+       if ($('input[name=IC13_T2_R_11]:checked', '#Q11').val() !== '') {$('#QQ11').css('background-color', 'red')}
+      });
+    
+      $('#Q12 input').on('change', function() {
+       if ($('input[name=IC13_T2_R_12]:checked', '#Q12').val() !== '') {$('#QQ12').css('background-color', 'red')}
+      });
+    
+      $('#Q13 input').on('change', function() {
+       if ($('input[name=IC13_T2_R_13]:checked', '#Q8').val() !== '') {$('#QQ13').css('background-color', 'red')}
+      });
+    
+        
+        
+</script>
+
+<!-- Script for change text size -->
+<Script>
+
+        $('#smallsize').click(function() {
+              $('pre').css('font-size', 12);
+              $('.answer_area').css('font-size', 12);
+            });
+        
+            $('#normalsize').click(function() {
+            $('pre').css('font-size', 15);
+            $('.answer_area').css('font-size', 15);
+            });
+        
+            $('#largesize').click(function() {
+            $('pre').css('font-size', 18);
+            $('.answer_area').css('font-size', 18);
+            });
+        
+</Script>
+
+</div>
+
+</body>
+</html>

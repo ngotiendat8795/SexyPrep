@@ -34,7 +34,7 @@ body {
 
 .interface {
   height: 100%;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,6 +55,27 @@ body {
   font-family: Tahoma;
   font-style: bolder;
 }
+
+#setting_tab {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#highlight_area {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#text_change {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 
 #clock_area {
   display: flex;
@@ -84,10 +105,10 @@ body {
 
 
 #navigate_tab {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top:10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top:10px;
 }
 
 
@@ -126,7 +147,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 10px;
-  height: 100%;
+  height: 104.3%;
 
 /* prevent browser's built-in drag from interfering */
   -moz-user-select: none;
@@ -271,7 +292,6 @@ a {
   display: flex;
   flex-direction: row;
   align-content: space-around;
-
   align-items: center;
 }
 
